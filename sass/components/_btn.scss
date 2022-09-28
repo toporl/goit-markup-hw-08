@@ -1,0 +1,44 @@
+.btn {
+    margin: auto;
+    padding: 10px 32px;
+    border: 0px;
+    border-radius: 4px;
+    font-family: inherit;
+    color: $white-text-color;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: $white-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    fill: #000000;
+    transition: fill $transition ;
+}
+
+.btn-close__icon:hover {
+    fill: $accent-color;
+}
+
+.register-btn {
+    padding-left: 52px;
+    padding-right: 52px;
+}

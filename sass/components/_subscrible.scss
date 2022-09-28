@@ -1,0 +1,45 @@
+.subscrible__form {
+    display: flex;
+    align-items: center;
+}
+
+.subscrible__input {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: $footer-color;
+    cursor: pointer;
+}
+
+.subscrible-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $white-text-color;
+    background-color: $accent-color;
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: $white-text-color;
+}
+
+.subscrible__icon {
+    margin-left: 10px;
+    fill: $white-text-color;
+}

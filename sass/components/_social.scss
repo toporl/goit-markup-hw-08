@@ -1,0 +1,41 @@
+.social {
+    @include gap(flex, 10px);
+    
+    justify-content: center;
+}
+
+
+.social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #afb1b8;
+
+    transition: color $transition, background-color $transition;
+    fill: currentColor;
+    background-color: $white-text-color;
+     
+     
+    &__link:hover,
+    &__link:focus {
+        color: $white-text-color;
+         background-color: $accent-color;
+        }
+}
+
+.social__link--down {
+    fill: $white-text-color;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+

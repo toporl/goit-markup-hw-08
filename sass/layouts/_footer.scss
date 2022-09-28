@@ -1,0 +1,30 @@
+.footer {
+    padding: 60px 0;
+    background-color: $footer-color;
+    font-style: normal;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+    
+.footer__title {
+    display: block;
+    color: $white-text-color;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.footer__address {
+    flex-grow: 1;
+    margin-right: 70px;
+}
+
+.footer__join {
+    margin-right: 93px;
+}
+
+.join__list {
+    @include gap(flex, 10px);
+}

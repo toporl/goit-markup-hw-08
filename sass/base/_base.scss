@@ -1,0 +1,36 @@
+body {
+    color: $main-text-color;
+    background-color: $white-text-color;
+    font-family: $main-font;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--no-padding-top{
+        padding-top: 0px;
+    }
+    
+    &--another-bg{
+        background-color: #f5f4fa;
+    }
+}
+
+.title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.section__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
