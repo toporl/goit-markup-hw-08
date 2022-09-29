@@ -7,6 +7,7 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -16,6 +17,12 @@ body {
 }
 .section--no-padding-top {
   padding-top: 0px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--no-padding-top {
+    display: block;
+  }
 }
 .section--another-bg {
   background-color: #f5f4fa;
@@ -128,13 +135,21 @@ ul {
 }
 
 .footer__logo {
-  color: #ffffff;
   font-family: "Raleway";
+  font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .btn {
@@ -609,13 +624,37 @@ ul {
   font-style: normal;
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__address {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .footer__title {
@@ -624,16 +663,26 @@ ul {
   font-style: normal;
   margin-bottom: 20px;
 }
-
-.footer__address {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: 70px;
+@media screen and (max-width: 1199px) {
+  .footer__title {
+    text-align: center;
+  }
 }
 
-.footer__join {
-  margin-right: 93px;
+@media screen and (max-width: 767px) {
+  .footer__join {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__join {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__join {
+    margin-right: 93px;
+  }
 }
 
 .join__list {
@@ -641,6 +690,20 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  .join__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__subscrible {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .address {
@@ -654,6 +717,12 @@ ul {
   font-style: normal;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .address__list {
+    margin-bottom: 60px;
+  }
 }
 
 .address__contact {
@@ -670,17 +739,30 @@ ul {
 }
 
 .subscrible__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+}
+@media screen and (max-width: 1199px) {
+  .subscrible__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscrible__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .subscrible__input {
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
   padding-left: 18px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -691,6 +773,19 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   cursor: pointer;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media screen and (max-width: 1199px) {
+  .subscrible__input {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscrible__input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscrible-btn {
@@ -716,6 +811,12 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .subscrible-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscrible__icon {
