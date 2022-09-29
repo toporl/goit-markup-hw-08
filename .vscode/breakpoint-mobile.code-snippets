@@ -1,0 +1,10 @@
+{
+	"Print to console":{
+		"scope": "javascript,typescript,css,scss",
+		"prefix": "mobile", 
+		"body": [
+			"@media screen and (max-width: 767px)"
+		],
+		"description": "breakpoint for mobile"
+	}
+}
