@@ -35,6 +35,7 @@
     letter-spacing: 0.03em;
     font-family: inherit;
     cursor: pointer;
+    color: $main-text-color;
 
     transition: color $transition, background-color $transition,
         box-shadow $transition;

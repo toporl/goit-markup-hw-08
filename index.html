@@ -136,30 +136,52 @@
           <div>
             <ul class="activity list">
               <li class="activity__item">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Розробка на компьютері"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/activity/activity1@1x.webp 1x,
+                      images/activity/activity1@2x.webp   2x
+                    "
+                  />
+                  <img
+                    src="./images/activity/activity1@1x.webp"
+                    alt="Розробка на компьютері"
+                  />
+                </picture>
                 <h3 class="activity__title title">Десктопні додатки</h3>
               </li>
               <li class="activity__item">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Робота з мобільним додатком"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/activity/activity2@1x.webp 1x,
+                      images/activity/activity2@2x.webp   2x
+                    "
+                  />
+                  <img
+                    src="./images/activity/activity2@1x.webp"
+                    alt="Робота з мобільним додатком"
+                  />
+                </picture>
                 <h3 class="activity__title title">Мобільні додатки</h3>
               </li>
               <li class="activity__item">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Робота з планшетом"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/activity/activity3@1x.webp 1x,
+                      images/activity/activity3@2x.webp   2x
+                    "
+                  />
+                  <img
+                    src="./images/activity/activity3@1x.webp"
+                    alt="Робота з
+                  планшетом"
+                  />
+                </picture>
                 <h3 class="activity__title title">Дизайнерські рішення</h3>
               </li>
             </ul>
@@ -172,11 +194,19 @@
           <ul class="team list">
             <li class="team__item">
               <img
-                src="./images/ihor.jpg"
+                srcset="
+                  ./images/team/img_mob-450.webp 450w,
+                  ./images/team/img_mob-900.webp 900w,
+                  ./images/team/img_tab-354.webp 354w,
+                  ./images/team/img_tab-708.webp 708w,
+                  ./images/team/imgdesk-270.webp 270w,
+                  ./images/team/imgdesk-540.webp 540w
+                "
+                sizes=" (min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
+                src="./images/team/img_mob-450.webp 450w"
                 alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
               />
+
               <div class="team__desc">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -238,10 +268,17 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/olga.jpg"
+                srcset="
+                  ./images/team/img_mob-450-1.webp 450w,
+                  ./images/team/img_mob-900-1.webp 900w,
+                  ./images/team/img_tab-354-1.webp 354w,
+                  ./images/team/img_tab-708-1.webp 708w,
+                  ./images/team/imgdesk-270-1.webp 270w,
+                  ./images/team/imgdesk-540-1.webp 540w
+                "
+                sizes=" (min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
+                src="./images/team/img_mob-450-1.webp 450w"
                 alt="Ольга Рєпіна"
-                width="270"
-                height="260"
               />
               <div class="team__desc">
                 <h3 class="team__name">Ольга Рєпіна</h3>
@@ -304,10 +341,17 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/mykola.jpg"
+                srcset="
+                  ./images/team/img_mob-450-2.webp 450w,
+                  ./images/team/img_mob-900-2.webp 900w,
+                  ./images/team/img_tab-354-2.webp 354w,
+                  ./images/team/img_tab-708-2.webp 708w,
+                  ./images/team/imgdesk-270-2.webp 270w,
+                  ./images/team/imgdesk-540-2.webp 540w
+                "
+                sizes=" (min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
+                src="./images/team/img_mob-450-2.webp 450w"
                 alt="Микола Тарасов"
-                width="270"
-                height="260"
               />
               <div class="team__desc">
                 <h3 class="team__name">Микола Тарасов</h3>
@@ -370,10 +414,17 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/mykhailo.jpg"
+                srcset="
+                  ./images/team/img_mob-450-3.webp 450w,
+                  ./images/team/img_mob-900-3.webp 900w,
+                  ./images/team/img_tab-354-3.webp 354w,
+                  ./images/team/img_tab-708-3.webp 708w,
+                  ./images/team/imgdesk-270-3.webp 270w,
+                  ./images/team/imgdesk-540-3.webp 540w
+                "
+                sizes=" (min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
+                src="./images/team/img_mob-450-3.webp 450w"
                 alt="Михайло Єрмаков"
-                width="270"
-                height="260"
               />
               <div class="team__desc">
                 <h3 class="team__name">Михайло Єрмаков</h3>
@@ -689,37 +740,65 @@
       </button>
       <ul class="nav__list list">
         <li class="nav__item">
-          <a href="" class="nav__link nav__link--current">Студія</a>
+          <a class="nav__link nav__link--current" href="./index.html">Студія</a>
         </li>
-        <li class="nav__item"><a href="" class="nav__link">Портфоліо</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
       </ul>
       <ul class="contact__list list">
         <li class="contact__item">
-          <a href="" class="contact__link contact__link--accent"
+          <a
+            href="tel:+380961111111"
+            class="contact__link contact__link--accent"
             >+38 096 111 11 11</a
           >
         </li>
         <li class="contact__item">
-          <a href="" class="contact__link">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com" class="contact__link"
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
       <ul class="menu-social list">
         <li class="menu-social__item">
-          <a href="" class="menu-social__link">Instagram</a>
+          <a
+            class="menu-social__link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="Instagram"
+            >Instagram</a
+          >
         </li>
         <li class="menu-social__item">
-          <a href="" class="menu-social__link menu-social__link--separator"
+          <a
+            class="menu-social__link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="Twitter"
             >Twitter</a
           >
         </li>
         <li class="menu-social__item">
-          <a href="" class="menu-social__link menu-social__link--separator"
+          <a
+            class="menu-social__link"
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="Facebook"
             >Facebook</a
           >
         </li>
         <li class="menu-social__item">
-          <a href="" class="menu-social__link menu-social__link--separator"
+          <a
+            class="menu-social__link"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="LinkedIn"
             >LinkedIn</a
           >
         </li>
