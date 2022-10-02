@@ -7,12 +7,19 @@
         flex-wrap:wrap;
     }
 }
-  
-.project__item {
+
+.project__item:not(:last-child){
 
     @media screen and (max-width: 767px){
     margin-bottom: 30px;
     }
+}
+  
+.project__item {
+
+    // @media screen and (max-width: 767px){
+    // margin-bottom: 30px;
+    // }
 
     @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px)/ 2);
@@ -22,7 +29,8 @@
         flex-basis: calc((100% - 30px * 2) / 3);
     }    
       
-  }
+}
+
 
 .project__thumb {
       position: relative;
@@ -79,6 +87,7 @@
     padding: 20px 24px;
     background: $white-text-color;
     border: 1px solid #eeeeee;
+    border-top: none;
 
     @media screen and (min-width: 768px){
         flex-grow: 1;

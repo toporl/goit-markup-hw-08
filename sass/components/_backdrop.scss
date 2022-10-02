@@ -15,5 +15,10 @@
         opacity: 0;
         pointer-events: none;
         }
+    
+    @media screen and (max-width: 767px){
+        position: absolute;
+    }
+
 }
 
