@@ -4,6 +4,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -985,21 +989,42 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
   background-color: #ffffff;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    position: relative;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

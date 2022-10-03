@@ -4,6 +4,10 @@ body {
     font-family: $main-font;
 }
 
+body.modal-open{
+    overflow: hidden;
+}
+
 .section {
 
     padding-top: 60px;
