@@ -34,6 +34,12 @@
     transition: fill $transition ;
 }
 
+.btn-close__icon{
+    @media screen and (max-width: 1199px){
+        position: absolute;
+    }
+}
+
 .btn-close__icon:hover {
     fill: $accent-color;
 }
